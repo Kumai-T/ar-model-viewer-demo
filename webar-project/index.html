@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Earth Model AR Viewer</title>
+  <script type="moduleoogle/model-viewer/dist/model-viewer.min.js</script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer src="earth_turn_20250826_1700.glb" alt="Earth Model"
+    ar ar-modes="scene-viewer webxr quick-look"
