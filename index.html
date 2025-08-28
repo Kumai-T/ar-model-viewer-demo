@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Earth Turn AR Viewer</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/modelstyle>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    model-viewer {
+      width: 100%;
+      height: 90vh;
+    }
+  </style>
+</head>
+<body>
+  <h1>地球の回転モデル（AR対応）</h1>
+  <model-viewer
+    src="earth_turn_20250826_1700.glb"
+    alt="地球の回転モデル"
+    ar
+    ar-modes="scene-viewer webxr quick-look"
+    camera-controls
+    auto-rotate
+    environment-image="https://modelviewer.dev/shared-assets/environments/neutral.hdr"
+    exposure="1"
